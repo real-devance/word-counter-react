@@ -1,0 +1,16 @@
+// _mixins.scss
+
+$breakpoint-lg: 80em; // Large screen breakpoint
+
+// Apply styles for large screens
+@mixin breakpoint-lg {
+  @media (min-width: $breakpoint-lg) {
+    @content;
+  }
+}
+
+// Remove border and set background to transparent
+@mixin no-border-background {
+  border: 0;
+  background: transparent;
+}

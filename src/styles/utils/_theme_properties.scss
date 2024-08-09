@@ -1,0 +1,24 @@
+@use '../abstract/colors' as *;
+
+// SVG URLs for light and dark themes
+$svg-url-dark: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Crect x='0' y='0' width='10' height='10' fill-opacity='0.3' fill='%23FFFFFF'/%3E%3C/svg%3E";
+$svg-url-light: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Crect x='0' y='0' width='10' height='10' fill-opacity='0.3' fill='%23000000'/%3E%3C/svg%3E";
+
+
+// Light theme variables
+.light_theme {
+  --svg-bg: url("#{$svg-url-light}"); // Background for SVG in light theme
+  --primary-bg: #{$white}; // Primary background color
+  --accent-light: #{$white}; // Light accent color
+  --accent-dark: #{$black}; // Dark accent color
+  --backdrop-color: #{$light-white}; // Backdrop color
+}
+
+// Dark theme variables
+.dark_theme {
+  --svg-bg: url("#{$svg-url-dark}"); // Background for SVG in dark theme
+  --primary-bg: #{$black}; // Primary background color
+  --accent-light: #{$black}; // Light accent color
+  --accent-dark: #{$white}; // Dark accent color
+  --backdrop-color: #{$light-black}; // Backdrop color
+}

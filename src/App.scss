@@ -1,0 +1,21 @@
+// Forward all exports from the utils index file
+@forward './styles/utils/index';
+
+// Styles for the container of the application
+.app_container {
+    font-family: "Lato", sans-serif;
+    min-height: 100dvh; 
+    transition: background-color 0.5s;
+    background-color: var(--primary-bg); 
+    background-image: var(--svg-bg);     
+    background-position: center;        
+
+
+    display: grid;
+    align-items: baseline;
+
+    // Style for specific text elements to ensure consistent theming
+    p, h1, h2, h3, textarea {
+        color: var(--accent-dark); 
+    }
+}

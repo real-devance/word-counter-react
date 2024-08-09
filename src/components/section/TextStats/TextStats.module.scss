@@ -1,0 +1,28 @@
+@use '../../../styles/abstract/index' as stat;
+
+// Style for the container of text statistics
+.text_stats_section {
+    display: flex;             
+    flex-wrap: wrap;         
+    gap: 1rem;                 
+    padding: stat.$padding-1;  
+    border: stat.$border-width-4 solid var(--accent-dark); 
+
+    // Style for each individual statistic item
+    .stat_item {
+        letter-spacing: .2ch;  
+        flex: 1 1 30%;        
+
+        display: grid;       
+
+        // Align the last child element at the end of the grid
+        > :last-child {
+            align-self: end;  
+        }
+
+        // Apply styles for larger screens (breakpoint-lg) 
+        @include stat.breakpoint-lg {
+            flex: 1 0 0;     
+        }
+    }
+}

@@ -1,0 +1,47 @@
+html {
+    font-size: 100%; // Set base font size
+}
+
+body {
+    min-height: 100%; // Ensure body covers full height
+}
+
+/* Apply box-sizing border-box to all elements */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Reset margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Make images and SVGs block elements that scale */
+img,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* Remove margin, padding, and list style for lists */
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Make textareas full width and inherit font */
+textarea {
+    display: block;
+    font-family: inherit;
+    outline: transparent;
+}
+
+/* Make buttons block elements with pointer cursor */
+button {
+    display: block;
+    cursor: pointer;
+}

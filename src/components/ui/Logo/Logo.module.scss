@@ -1,0 +1,11 @@
+@use '../../../styles/abstract/fonts' as *; // Import font variables
+
+.logo {
+  line-height: 1; 
+
+  p {
+    // Set font size with a responsive clamp function
+    font-size: clamp($text-lg, 0.5rem + 2.5vw, $text-xl); 
+    font-weight: $font-bold; 
+  }
+}

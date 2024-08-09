@@ -1,0 +1,37 @@
+@use '../abstract/index' as *; // Import variables from the index file
+
+/* Typography Utility Classes */
+
+/* Font Sizes */
+.text-sm {
+  font-size: $text-sm; 
+}
+
+.text-base {
+  font-size: $text-base; 
+}
+
+.text-md {
+  font-size: $text-md; 
+}
+
+.text-lg {
+  font-size: $text-lg; 
+}
+
+.text-xl {
+  font-size: $text-xl; 
+}
+
+/* Font Weights */
+.font-normal {
+  font-weight: $font-normal; 
+}
+
+.font-semi-bold {
+  font-weight: $font-semi-bold;
+}
+
+.font-bold {
+  font-weight: $font-bold;
+}

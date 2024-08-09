@@ -1,0 +1,25 @@
+@use '../../../styles/abstract/index' as h;
+
+// Styles for the header container
+.header{
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur( 8px );
+    border-bottom: h.$border-width-2 solid var(--accent-dark);
+
+    // Styles for buttons within the header
+    & button{
+        @include h.no-border-background;
+
+        // Icon width and height settings
+        & svg{
+            width: h.$icon-width-primary;
+            height: 100%;
+            fill: var(--accent-dark);
+        }
+    }
+
+}
+

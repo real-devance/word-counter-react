@@ -1,0 +1,37 @@
+// Style for the social stats section container
+.social_stats_section{
+    border-bottom: 2px solid var(--accent-dark);
+    overflow-y: auto;    
+    scrollbar-width: none;   
+    
+    &::-webkit-scrollbar {
+        width: 0;              
+    }   
+    
+    & h2{
+        margin-bottom: 1rem;
+    }
+    > *{
+        margin-bottom: 0.5rem;
+    }
+
+   
+}
+
+// Style for each individual social stat item
+.social_stat{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem;
+
+    & svg{
+        width: 1.25rem;
+        fill: var(--accent-dark);
+    }
+}
+
+// Style for elements that should appear dull
+.dull{
+    opacity: 0.5;
+}
